@@ -4,7 +4,7 @@
 
 A professional research paper website showcasing a comprehensive econometric and machine learning framework for forecasting India's Eighth Pay Commission and its impact on household consumption patterns across rural and urban India.
 
-**Live Site:** [mudit-yadav-research.vercel.app](https://mudit-yadav-research.vercel.app)  
+**Live Site:** [mudityadavresearch.vercel.app](https://mudityadavresearch.vercel.app)  
 **Repository:** [github.com/ydvmudit07/mudit-yadav-research](https://github.com/ydvmudit07/mudit-yadav-research)  
 **Author:** Mudit Yadav
 
@@ -147,7 +147,7 @@ export const metadata: Metadata = {
 
 Update in `components/Navbar.tsx` and `components/Footer.tsx`:
 - LinkedIn: `https://linkedin.com/in/ydvmudit07`
-- GitHub: `https://github.com/ydvmudit07`
+- GitHub: `https://github.com/ydvmudit07/mudit-yadav-research`
 
 ## Design Features
 
@@ -157,7 +157,7 @@ The navbar title smoothly collapses on scroll (> 24px):
 - **"Mudit Yadav"** fades out with upward translation
 - **"MY"** fades in with downward translation
 - Icons scale to match the title size
-- Smooth 700ms easing animation
+- Smooth 500ms easing animation
 
 ### Interactive PDF
 
@@ -182,7 +182,6 @@ Color definitions in `app/globals.css`:
 
 - **Framework**: Next.js 15 (App Router)
 - **UI**: React 19, Tailwind CSS 4
-- **Icons**: Lucide React (Share2, Code, Moon, Sun)
 - **Fonts**: Raleway (Google Fonts)
 - **Type Safety**: TypeScript
 - **PDF**: Embedded object element with fallback

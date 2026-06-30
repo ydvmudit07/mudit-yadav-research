@@ -29,7 +29,7 @@ export function Footer() {
                   </p>
                   <p>
                     <a
-                      href="https://github.com/ydvmudit07"
+                      href="https://github.com/ydvmudit07/mudit-yadav-research"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-accent hover:underline"

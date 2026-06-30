@@ -84,7 +84,7 @@ export function Navbar() {
             LinkedIn
           </a>
           <a
-            href="https://github.com/ydvmudit07"
+            href="https://github.com/ydvmudit07/mudit-yadav-research"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[1.25rem] sm:text-[1.5rem] text-primary hover:text-accent transition-colors leading-none"
