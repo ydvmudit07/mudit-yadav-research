@@ -1,0 +1,166 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-heading: var(--font-sans);
+  --font-sans: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Monaco', 'Courier New', monospace;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  color-scheme: light;
+  /* Light mode: CFR.org inspired palette */
+  --background: #F5F3EF;
+  --foreground: #1a1a1a;
+  --card: #FAF8F5;
+  --card-foreground: #1a1a1a;
+  --popover: #FAF8F5;
+  --popover-foreground: #1a1a1a;
+  --primary: #2c2c2c;
+  --primary-foreground: #F5F3EF;
+  --secondary: #6B6B6B;
+  --secondary-foreground: #F5F3EF;
+  --muted: #D7D3CC;
+  --muted-foreground: #6B6B6B;
+  --accent: #2c2c2c;
+  --accent-foreground: #F5F3EF;
+  --destructive: #DC2626;
+  --border: #D7D3CC;
+  --input: #FAF8F5;
+  --ring: #2c2c2c;
+  --radius: 0rem;
+}
+
+.dark {
+  color-scheme: dark;
+  /* Dark mode: CFR.org inspired palette */
+  --background: #171717;
+  --foreground: #E8E8E8;
+  --card: #202020;
+  --card-foreground: #E8E8E8;
+  --popover: #202020;
+  --popover-foreground: #E8E8E8;
+  --primary: #D3D3D3;
+  --primary-foreground: #171717;
+  --secondary: #888888;
+  --secondary-foreground: #E8E8E8;
+  --muted: #333333;
+  --muted-foreground: #888888;
+  --accent: #D3D3D3;
+  --accent-foreground: #171717;
+  --destructive: #EF4444;
+  --border: #333333;
+  --input: #282828;
+  --ring: #D3D3D3;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #171717;
+    --foreground: #E8E8E8;
+    --card: #202020;
+    --card-foreground: #E8E8E8;
+    --popover: #202020;
+    --popover-foreground: #E8E8E8;
+    --primary: #D3D3D3;
+    --primary-foreground: #171717;
+    --secondary: #888888;
+    --secondary-foreground: #E8E8E8;
+    --muted: #333333;
+    --muted-foreground: #888888;
+    --accent: #D3D3D3;
+    --accent-foreground: #171717;
+    --destructive: #EF4444;
+    --border: #333333;
+    --input: #282828;
+    --ring: #D3D3D3;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+  }
+  
+  html {
+    @apply font-sans;
+  }
+  
+  h1 {
+    font-family: var(--font-sans);
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  h2 {
+    font-family: var(--font-sans);
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    font-family: var(--font-sans);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  h4, h5, h6 {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  p {
+    line-height: 1.625;
+  }
+  
+  a {
+    @apply text-accent hover:underline focus:outline-2 focus:outline-accent;
+  }
+}
