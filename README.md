@@ -86,7 +86,7 @@ public/
 └── [other assets]
 ```
 
-## Customization Guide
+<!-- ## Customization Guide
 
 ### Update Metadata & Title
 
@@ -147,7 +147,7 @@ export const metadata: Metadata = {
 
 Update in `components/Navbar.tsx` and `components/Footer.tsx`:
 - LinkedIn: `https://linkedin.com/in/ydvmudit07`
-- GitHub: `https://github.com/ydvmudit07/mudit-yadav-research`
+- GitHub: `https://github.com/ydvmudit07/mudit-yadav-research` -->
 
 ## Design Features
 
